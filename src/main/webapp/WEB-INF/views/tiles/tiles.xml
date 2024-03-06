@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>  
+ 
+   <!-- Base Definition -->
+   <definition name="base-definition" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+   </definition>  
+ 
+   <!-- Home Page -->
+   <definition name="home" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+   </definition>  
+
+   <!-- Obtener todos los usuarios -->
+   <definition name="usuarios" extends="base-definition">  
+       <put-attribute name="title" value="usuarios" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/user/usuarios.jsp" />  
+   </definition>  
+      
+         <!-- Pantalla para crear usuarios -->
+   <definition name="usuarioCrear" extends="base-definition">  
+       <put-attribute name="title" value="usuarioCrear" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/user/usuarioCrear.jsp" />  
+   </definition> 
+   
+   <!-- Modificar todos los usuarios -->
+   <definition name="usuarioModificar" extends="base-definition">  
+       <put-attribute name="title" value="usuarioModificar" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/user/usuarioModificar.jsp" />  
+   </definition>  
+    
+      
+   <!-- Contactenos-us Page -->
+   <definition name="contactenos" extends="base-definition">  
+       <put-attribute name="title" value="contactenos" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/contactus.jsp" />  
+   </definition>  
+ 
+  <!-- Noticias-us Page -->
+   <definition name="noticias" extends="base-definition">  
+       <put-attribute name="title" value="noticias" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/noticias.jsp" />  
+   </definition>  
+   
+     <!-- Actividades-us Page -->
+   <definition name="actividades" extends="base-definition">  
+       <put-attribute name="title" value="actividades" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/actividades.jsp" />  
+   </definition>  
+ 
+    <!-- Materias-us Page -->
+   <definition name="materias" extends="base-definition">  
+       <put-attribute name="title" value="materias" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/materias.jsp" />  
+   </definition>  
+   
+   <!-- Notas-us Page -->
+   <definition name="notas" extends="base-definition">  
+       <put-attribute name="title" value="notas" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/notas.jsp" />  
+   </definition>  
+   
+ 
+ 
+</tiles-definitions>
